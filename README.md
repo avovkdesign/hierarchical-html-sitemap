@@ -1,16 +1,17 @@
-=== Hierarchical HTML Sitemap ===
-Contributors: egolacrima, wppuzzle
-Tags: html sitemap, seo, sitemap, hierarchical, posts, posts list, pages, pages list, shortcode 
-Donate link: https://www.liqpay.com/ru/checkout/card/avovkdesin
+# Hierarchical HTML Sitemap 
+**Contributors:** egolacrima, wppuzzle  
+**Tags:** html sitemap, seo, sitemap, hierarchical, posts, posts list, pages, pages list, shortcode   
+**Donate link:** https://www.liqpay.com/ru/checkout/card/avovkdesin  
 
-Requires at least: 3.0
-Tested up to: 4.9.6
-Stable tag: 1.3
-License: GPLv2 or later 
+**Requires at least:** 3.0  
+**Tested up to:** 4.9.6  
+**Stable tag:** 1.3 
+**License:** GPLv2 or later   
 
 A lightweight and simple HTML sitemap for your WordPress blog.
 
-== Description ==
+
+## Description 
 
 Hierarchical HTML Sitemap offers visitors an easy and intuitive navigation across your blog.
 
@@ -21,7 +22,8 @@ The output does not include any CSS or JavaScript files - it is pure HTML, ready
 *Полное руководство по установке и использованию плагина на **русском языке** доступны на [блоге автора](http://avovkdesign.com/plugin-hierarchical-html-sitemap.html "Руководство по установке и настройке плагина Hierarchical HTML Sitemap").*
 
 
-= Features: =
+
+### Features: 
 
 *   Short and easy shortcode: `[htmlmap]`
 *   Categories sorted hierarchically.
@@ -34,7 +36,8 @@ The output does not include any CSS or JavaScript files - it is pure HTML, ready
 *   No ads nor author links.
 
 
-= Options: =
+
+### Options: 
 
 The plugin’s shortcode `[htmlmap]` accepts several optional parameters:
 
@@ -50,9 +53,11 @@ Several parameters could be used in the same shortcode. For example:
 `[htmlmap exclude="3546,7398" exclude_cat="1,34" showpages hidecloud]`
 
 
-== Installation ==
 
-= Automatic installation: =
+## Installation 
+
+
+### Automatic installation: 
 
 1. Log-in to your WordPress admin interface.
 1. Hover over "Plugins" and click on "Add New".
@@ -60,14 +65,16 @@ Several parameters could be used in the same shortcode. For example:
 1. In results page click the "Install Now" link for "Hierarchical HTML Sitemap".
 1. Click "Activate Plugin" to finish installation. You're done!
 
-= Manual installation: =
+
+### Manual installation: 
 
 1. Download [Hierarchical HTML Sitemap](http://avovkdesign.com/plugin-hierarchical-html-sitemap.html "Hierarchical HTML Sitemap") and unzip the plugin folder.
 1. Upload `hierarchical-sitemap` folder into to the `/wp-content/plugins/` directory.
 1. Go to WordPress dashboard and navigate to "Plugins" -> "Installed Plugins".
 1. Activate "Hierarchical HTML Sitemap".
 
-= Usage: =
+
+### Usage: 
 
 1. Make sure the plugin is installed and activated.
 1. Hover over "Pages" and click on "Add New" in WordPress dashboard.
@@ -76,19 +83,25 @@ Several parameters could be used in the same shortcode. For example:
 
 
 
-== Screenshots ==
 
-1. Example of a sitemap.
+## Screenshots 
+
+### 1. Example of a sitemap.
+![Example of a sitemap.](https://ps.w.org/hierarchical-html-sitemap/assets/screenshot-1.png)
 
 
 
-== Changelog ==
 
-= 1.1 =
+
+## Changelog 
+
+
+### 1.1 
 *	Fix: displaying empty categories (those without children posts but having non-empty sub-categories)
 *	New Feature: show categories’ descriptions (use option `showdescription`)
 *	New Feature: hide post’s published date (use option `hidedate`)
 
 
-= 1.0 =
+
+### 1.0 
 *   Initial release.
