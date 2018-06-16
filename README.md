@@ -1,8 +1,7 @@
 # Hierarchical HTML Sitemap 
 **Contributors:** egolacrima, wppuzzle  
-**Tags:** html sitemap, seo, sitemap, hierarchical, posts, posts list, pages, pages list, shortcode   
+**Tags:** sitemap, html sitemap, seo, hierarchical sitemap, posts, posts list, pages, pages list, shortcode   
 **Donate link:** https://www.liqpay.com/ru/checkout/card/avovkdesin  
-
 **Requires at least:** 3.0  
 **Tested up to:** 4.9.6  
 **Stable tag:** 1.3 
@@ -13,14 +12,12 @@ A lightweight and simple HTML sitemap for your WordPress blog.
 
 ## Description 
 
+
 Hierarchical HTML Sitemap offers visitors an easy and intuitive navigation across your blog.
 
 This plugin generates HTML Sitemap of your WordPress blog. It displays a list of posts, grouped by hierarchically sorted categories. By using a shortcode you can easily and quickly display sitemap on a page, or anywhere where shortcodes work, e.g. in a widget.
 
 The output does not include any CSS or JavaScript files - it is pure HTML, ready for you to style as you want it.
-
-*Полное руководство по установке и использованию плагина на **русском языке** доступны на [блоге автора](http://avovkdesign.com/plugin-hierarchical-html-sitemap.html "Руководство по установке и настройке плагина Hierarchical HTML Sitemap").*
-
 
 
 ### Features: 
@@ -36,8 +33,16 @@ The output does not include any CSS or JavaScript files - it is pure HTML, ready
 *   No ads nor author links.
 
 
+### PRO Features
 
-### Options: 
+[Hierarchical HTML Sitemap Pro](https://wp-puzzle.com/hierarchical-html-sitemap/) allow:
+
+1. Extended sitemap settings
+1. Shortcode generator
+1. Qualified support
+
+
+### Usage & Options: 
 
 The plugin’s shortcode `[htmlmap]` accepts several optional parameters:
 
@@ -91,10 +96,19 @@ Several parameters could be used in the same shortcode. For example:
 
 
 
-
-
 ## Changelog 
 
+### 1.3
+*	tested up WordPress 4.6.9
+* 	tested up WordPress 4.6.9
+* 	added: option `hidecount` that disable displaying posts amount in category name
+* 	added filter hooks:
+	`hierarchicalsitemap_category_title_html`
+	`hierarchicalsitemap_posts_list_html`
+	`hierarchicalsitemap_pages_list_html`
+
+### 1.2
+* tested up to WordPress 4.7
 
 ### 1.1 
 *	Fix: displaying empty categories (those without children posts but having non-empty sub-categories)

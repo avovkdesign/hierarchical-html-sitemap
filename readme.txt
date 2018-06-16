@@ -1,8 +1,7 @@
 === Hierarchical HTML Sitemap ===
 Contributors: egolacrima, wppuzzle
-Tags: html sitemap, seo, sitemap, hierarchical, posts, posts list, pages, pages list, shortcode 
+Tags: sitemap, html sitemap, seo, hierarchical sitemap, posts, posts list, pages, pages list, shortcode
 Donate link: https://www.liqpay.com/ru/checkout/card/avovkdesin
-
 Requires at least: 3.0
 Tested up to: 4.9.6
 Stable tag: 1.3
@@ -18,8 +17,6 @@ This plugin generates HTML Sitemap of your WordPress blog. It displays a list of
 
 The output does not include any CSS or JavaScript files - it is pure HTML, ready for you to style as you want it.
 
-*Полное руководство по установке и использованию плагина на **русском языке** доступны на [блоге автора](http://avovkdesign.com/plugin-hierarchical-html-sitemap.html "Руководство по установке и настройке плагина Hierarchical HTML Sitemap").*
-
 
 = Features: =
 
@@ -33,21 +30,34 @@ The output does not include any CSS or JavaScript files - it is pure HTML, ready
 *   Does not enqueue any unnecessary .js or .css files.
 *   No ads nor author links.
 
+= PRO Features =
 
-= Options: =
+[Hierarchical HTML Sitemap Pro](https://wp-puzzle.com/hierarchical-html-sitemap/) allow:
+
+1. Extended sitemap settings
+1. Shortcode generator
+
+= Usage & Options: =
 
 The plugin’s shortcode `[htmlmap]` accepts several optional parameters:
 
-*   `exclude` : specify posts’ or pages’ IDs you don't want displayed (example: `[htmlmap exclude=445,446]`).
-*   `exclude_cat` : specify categories’ IDs you don't want displayed (example: `[htmlmap exclude_cat=1,34]`).
+*   `exclude` : specify posts or pages IDs you don't want displayed (example: `[htmlmap exclude=445,446]`).
+*   `exclude_cat` : specify categories IDs you don't want displayed (example: `[htmlmap exclude_cat=1,34]`).
 *   `showpages` : enables displaying list of pages (example: `[htmlmap showpages]`).
-*   `hidecloud` : disable categories’ cloud (example: `[htmlmap hidecloud]`).
-*   `showdescription` : enables displaying categories’ descriptions (they are not shown by default; example: `[htmlmap showdescription]`).
-*   `hidedate` : disable displaying posts’ published dates (example: `[htmlmap hidedate]`).
+*   `hidecloud` : disable categories cloud (example: `[htmlmap hidecloud]`).
+*   `showdescription` : enables displaying categories descriptions (they are not shown by default; example: `[htmlmap showdescription]`).
+*   `hidedate` : disable displaying posts published dates (example: `[htmlmap hidedate]`).
+*   `hidecount` : disable displaying posts amount in category name (example: `[htmlmap hidecount]`).
 
 Several parameters could be used in the same shortcode. For example:
 
 `[htmlmap exclude="3546,7398" exclude_cat="1,34" showpages hidecloud]`
+
+
+= Extra =
+
+* [Documentation](https://wp-puzzle.com/docs/hierarchical-html-sitemap/lite-options.html)
+* [GitHub repository](https://github.com/wppuzzle/hierarchical-html-sitemap) for issues and merge request
 
 
 == Installation ==
@@ -84,11 +94,22 @@ Several parameters could be used in the same shortcode. For example:
 
 == Changelog ==
 
+= 1.3 =
+* tested up WordPress 4.6.9
+* added: option `hidecount` that disable displaying posts amount in category name
+* added filter hooks:
+ * `hierarchicalsitemap_category_title_html`
+ * `hierarchicalsitemap_posts_list_html`
+ * `hierarchicalsitemap_pages_list_html`
+
+= 1.2 =
+* tested up to WordPress 4.7
+
 = 1.1 =
-*	Fix: displaying empty categories (those without children posts but having non-empty sub-categories)
-*	New Feature: show categories’ descriptions (use option `showdescription`)
-*	New Feature: hide post’s published date (use option `hidedate`)
+* Fix: displaying empty categories (those without children posts but having non-empty sub-categories)
+* New Feature: show categories’ descriptions (use option `showdescription`)
+* New Feature: hide post’s published date (use option `hidedate`)
 
 
 = 1.0 =
-*   Initial release.
+* Initial release.
